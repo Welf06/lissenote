@@ -4,7 +4,7 @@ Lissenote is a web app that converts audio and video files into notes, providing
 
 Lissenote is built with a react frontend and a flask backend, and it uses wave2vec for speech recognition. The app also makes use of a few APIs, including the Wikipedia API and the Google Translate API, to enhance its functionality and usability.
 
-This code sample was a winner in the Smart India Hackathon 2022. The submitted repository contains the frontend code of Lissenote.
+This code sample was a winner in the Smart India Hackathon 2022. The frontend code of Lissenote is contained in this repository, and the backend code is available at https://github.com/GNAR55/lissenote_backend. Both the frontend and backend were developed by a team, with the team member responsible for this repository focusing on the frontend and other team members working on the backend and model training.
 
 ## Getting Started
 
@@ -14,10 +14,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 To run Lissenote, you will need to have the following software installed on your system:
 
-- Node.js
-- NPM (comes with Node.js)
+- Node.js (for the frontend)
+- NPM (comes with Node.js) (for the frontend)
+- Python 3 (for the backend)
+- Flask (for the backend)
 
-### Installation
+
+### Frontend Installation
 
 1. Clone the repository:
 
@@ -36,11 +39,30 @@ npm install
 ```
 npm start
 ```
+The frontend app should now be running on http://localhost:3000.
 
-4. Refer [lissenote_backend](https://github.com/GNAR55/lissenote_backend) to get the Backend Running
+
+### Backend Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/GNAR55/lissenote_backend.git
+```
 
 
-The app should now be running on http://localhost:3000.
+2. Install the dependencies:
+```
+pip install -r requirements.txt
+```
+
+
+3. Start the development server:
+```
+python app.py
+```
+
+
+The backend should now be running on http://localhost:5000.
 
 ## Built With
 
